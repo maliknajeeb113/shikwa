@@ -159,13 +159,13 @@ def user_posts(username):
 
 def send_reset_email(user):
     token = user.get_reset_token()
-    msg = Message('Password Reset Request',
+    msg = Message('Dear User, Here is Your Password Reset Link',
                   sender='noreply@demo.com',
                   recipients=[user.email])
-    msg.body = f'''To reset your password, visit the following link:
+    msg.body = f'''To reset your password, please click the below link:
 {url_for('reset_token', token=token, _external=True)}
 
-If you did not make this request then simply ignore this email and no changes will be made.
+If you did not make this request, you can ignore this message :).
 '''
     mail.send(msg)
 
