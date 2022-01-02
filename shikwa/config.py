@@ -2,7 +2,7 @@ import os
 
 
 class Config:
-    SECRET_KEY = '5791628bb0b13ce0c676dfde280ba245'
+    SECRET_KEY = '13032001'
     SQLALCHEMY_DATABASE_URI = 'sqlite:///site.db'
     MAIL_SERVER = 'smtp.gmail.com'
     MAIL_PORT = 587
