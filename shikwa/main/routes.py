@@ -1,9 +1,17 @@
-from flask_wtf import FlaskForm
-from wtforms import StringField, SubmitField, TextAreaField
-from wtforms.validators import DataRequired
+from flask import render_template, request, Blueprint
+from shikwa.models import Post
+
+main = Blueprint('main', __name__)
 
 
-class PostForm(FlaskForm):
-    title = StringField('Title', validators=[DataRequired()])
-    content = TextAreaField('Content', validators=[DataRequired()])
-    submit = SubmitField('Post')
+@main.route("/")
+@main.route("/home")
+def home():
+    page = request.args.get('page', 1, type=int)
+    posts = Post.query.order_by(Post.date_posted.desc()).paginate(page=page, per_page=5)
+    return render_template('home.html', posts=posts)
+
+
+@main.route("/about")
+def about():
+    return render_template('about.html', title='About')
