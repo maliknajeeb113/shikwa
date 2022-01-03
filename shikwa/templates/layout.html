@@ -32,7 +32,7 @@
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
               {% if current_user.is_authenticated %}
-                <a class="nav-item nav-link" href="{{ url_for('posts.new_post') }}">New Post</a>
+                <a class="nav-item nav-link" href="{{ url_for('posts.new_post') }}">New SHIKWA</a>
                 <a class="nav-item nav-link" href="{{ url_for('users.account') }}">Account</a>
                 <a class="nav-item nav-link" href="{{ url_for('users.logout') }}">Logout</a>
               {% else %}
@@ -66,8 +66,12 @@
                 <li class="list-group-item"><h5>My Contacts</h5>
                   <a href="https://github.com/maliknajeeb113" target="_blank">My Github Profile<a>
                 </li>
-                <li class="list-group-item list-group-item-light"><h5>Announcements</h5>
-                  <a >No Announcements Yet. Stay Tuned.<a>
+                <li class="list-group-item list-group-item-light"><h5>Upcoming Features</h5>
+                  <a >1) Bio Option 😄.<a><br>
+                  <a >2) Search Option 🔍️</a><br>
+                  <a >3) Comment and Like 💖</a><br>
+                  <a>    And Many More....🤗</a>
+
                 </li>
               </ul>
             </p>
