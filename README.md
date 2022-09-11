@@ -20,6 +20,7 @@ This Project S.H.I.K.W.A – Student’s Helpline for Improving Knowledge - Wisd
 pip install -m req.txt
 ```
 4. Set the Environment Variables
+5. Edit the [Config File](shikwa/config.py)
 5. Run the project using 
 ```
 flask run
