@@ -21,4 +21,6 @@ pip install -m req.txt
 ```
 4. Set the Environment Variables
 5. Run the project using 
-```flask run```
+```
+flask run
+```
