@@ -25,3 +25,6 @@ pip install -m req.txt
 ```
 flask run
 ```
+
+### Live Demo Of Project
+http://shikwa.pythonanywhere.com/
