@@ -21,6 +21,7 @@ pip install -m req.txt
 ```
 4. Set the Environment Variables
 5. Edit the [Config File](shikwa/config.py)
+> Note: Enable 2FA in your google account and generate an app password.
 5. Run the project using 
 ```
 flask run
